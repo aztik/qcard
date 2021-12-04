@@ -1,0 +1,19 @@
+<section class="antialiased bg-gray-101 text-gray-600 h-screen px-4">
+  <div class="flex flex-col justify-center h-full">
+    <!-- Table -->
+    <div class="w-full max-w-3xl mx-auto bg-white shadow-lg rounded-sm border border-gray-200">
+      <mat-card (click)="onClick()" class="text-center text-gray-800">
+        <mat-card-title-group>
+          <mat-card-title>        {{data.country}}</mat-card-title>
+          <div *ngIf="checked">
+
+            <mat-card-title>        {{data.city}}</mat-card-title>
+          </div>
+          <img mat-card-xl-image src="https://media.gettyimages.com/photos/kabul-city-view-afghanistan-picture-id183330117?s=2048x2048">
+        </mat-card-title-group>
+      
+      </mat-card>
+
+    </div>
+  </div>
+</section>
